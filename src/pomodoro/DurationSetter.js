@@ -5,7 +5,6 @@ function DurationSetter(event, time) {
 
     // variable used to determine if button pressed was incremental or decremental
     const decreaseButton = event.target.value;
-
     // sets lower and upper limits for time durationif during a 'focus' session
     if(focusOrBreak === 'focus') {
         decreaseButton === 'decrease' ? time -= 5 : time += 5;

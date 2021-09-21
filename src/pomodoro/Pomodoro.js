@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import classNames from "../utils/class-names";
 import useInterval from "../utils/useInterval";
-import { minutesToDuration, secondsToDuration } from "../utils/duration/index";
+import { minutesToDuration } from "../utils/duration/index";
 import DurationSetter from "./DurationSetter";
 import IncrementDecrementButton from "./IncrementDecrementButton";
-import CurrentSessionTotalDuration from "./CurrentSessionTotalDuration";
-import ProgressBar from "./ProgressBar";
 import AdditionalTimerFeatures from "./AdditionalTimerFeatures";
 
 // These functions are defined outside of the component to insure they do not have access to state
@@ -97,14 +95,6 @@ function Pomodoro() {
 
   // stops timer when stop button is pressed; also disables stop button since timer is already stopped
   const stopTimerHandler = () => { setFormData({...initialFormState, disable: true}) }
-
-  const progressBarHandler = () => {
-    if(formData.session?.label === "Focusing") {
-    return ProgressBar(formData.session, focusDuration)
-    } else if(formData.session?.label === "On Break") {
-    return ProgressBar(formData.session, breakDuration)
-    }
-  }
   
   /**
    * Custom hook that invokes the callback function every second
@@ -162,6 +152,18 @@ function Pomodoro() {
               {/* TODO: Implement decreasing focus duration and disable during a focus or break session */}
               <IncrementDecrementButton duration={durationHandler} dataInfo='decrease-focus' disable={!formData.disable} value='decrease' name='focus' spanClass='oi oi-minus' />
               <IncrementDecrementButton duration={durationHandler} dataInfo='increase-focus' disable={!formData.disable} value='increase' name='focus' spanClass='oi oi-plus' />
+              {/* <button
+        type="button"
+        className="btn btn-primary"
+        data-testid='decrease-focus'
+        onClick={durationHandler}
+        disabled={!formData.disable}
+        name='focus'
+        value='decrease'
+      >
+        <span className='oi oi-plus' onClick={durationHandler} name='focus' value='decrease' type='button' /> */}
+        {/* <span className={spanClass} /> */}
+      {/* </button> */}
             </div>
           </div>
         </div>

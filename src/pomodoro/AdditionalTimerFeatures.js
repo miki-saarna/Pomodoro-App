@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from "../utils/class-names";
 import { secondsToDuration } from "../utils/duration/index";
 import CurrentSessionTotalDuration from "./CurrentSessionTotalDuration";
 import ProgressBar from "./ProgressBar";
@@ -40,8 +39,7 @@ function AdditionalTimerFeatures({session, focusDuration, breakDuration}) {
                 role="progressbar"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                // aria-valuenow={formData.session ? progressBarHandler : "0"} // TODO: Increase aria-valuenow as elapsed time increases
-                aria-valuenow={`${progressBarHandler() * 100}`} // TODO: Increase aria-valuenow as elapsed time increases
+                aria-valuenow={progressBarHandler() * 100} // TODO: Increase aria-valuenow as elapsed time increases
                 style={{ width: `${progressBarHandler() * 100}%` }} // TODO: Increase width % as elapsed time increases
               />
             </div>
