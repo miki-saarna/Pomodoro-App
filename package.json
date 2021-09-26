@@ -11,6 +11,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "prebuild": "CI=true react-scripts test --colors",
     "build": "react-scripts build",
     "docker:build": "docker image build . -t thinkful-ed/zid-fe-project-pomodoro-timer-01-qualified",
     "docker:run": "docker run --rm -it -p 3000:3000 thinkful-ed/zid-fe-project-pomodoro-timer-01-qualified",
@@ -23,7 +24,9 @@
     "test:solution": "npm run docker:build && npm run docker:test",
     "prelistFavFood": "echo 'my favorite food is: ...'",
     "postlistFavFood": "echo 'what about your favorite food?'",
-    "listFavFood": "echo 'sushi!'"
+    "listFavFood": "echo 'sushi!'",
+    "predeploy": "npm run build",
+    "deploy": "heroku open"
   },
   "eslintConfig": {
     "extends": "react-app"
