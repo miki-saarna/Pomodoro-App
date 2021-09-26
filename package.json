@@ -20,7 +20,10 @@
     "start": "react-scripts start",
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "react-scripts test",
-    "test:solution": "npm run docker:build && npm run docker:test"
+    "test:solution": "npm run docker:build && npm run docker:test",
+    "prelistFavFood": "echo 'my favorite food is: ...'",
+    "postlistFavFood": "echo 'what about your favorite food?'",
+    "listFavFood": "echo 'sushi!'"
   },
   "eslintConfig": {
     "extends": "react-app"
