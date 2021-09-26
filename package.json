@@ -26,8 +26,8 @@
     "postlistFavFood": "echo 'what about your favorite food?'",
     "listFavFood": "echo 'sushi!'",
     "predeploy": "npm run build",
-    "deploy": "heroku open",
-    "postdeploy": "echo 'Production deployment successful!'"
+    "postdeploy": "echo 'Production deployment successful!'",
+    "deploy": "heroku open"
   },
   "eslintConfig": {
     "extends": "react-app"
