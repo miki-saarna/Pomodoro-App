@@ -1,12 +1,9 @@
 
 # Pomodoro Timer
 
-![Image of the application actively running](/images/pomodoro-timer-active.png)
-
----
-
 ### Table of Contents
 
+- [Live Application](#live-application)
 - [Description](#description)
 - [Technologies](#technologies)
 - [How To Use](#how-to-use)
@@ -27,6 +24,8 @@ This application can be viewed here: https://pomodoro-timer-with-react-six.verce
 The Pomodoro Timer is used as a time management technique for maximizing efficiency in work or study. This technique makes use of splitting up periods of high productivity in intervals, with a short break in between each interval.
 
 The timer in this application has the capability to adjust the duration of each period, and it can also be paused or stopped during a session. A countdown timer with a progress bar shows the time left during each period. Duration setter buttons are disabled during a session, whereas, the stop button is disabled while the timer is inactive.
+
+![Image of the application actively running](/images/pomodoro-timer-active.png)
 
 ---
 
@@ -80,5 +79,7 @@ SOFTWARE.
 - GitHub: [miki-saarna](https://github.com/miki-saarna)
 - LinkedIn: [Mikito Saarna](https://www.linkedin.com/in/mikito-saarna/)
 - Website: [MikiSaarna.com](https://MikiSaarna.com)
+
+---
 
 [Back To The Top](#pomodoro-timer)
