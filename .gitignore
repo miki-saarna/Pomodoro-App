@@ -1,1 +1,7 @@
 node_modules/
+
+.vercel
+/node_modules
+.env.production
+/build
+vercel.json

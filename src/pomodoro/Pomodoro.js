@@ -45,10 +45,10 @@ function nextTick(prevState) {
  * @returns
  *  function to update the session state.
  */
-function nextSession(focusDuration, breakDuration) {
-  /**
-   * State function to transition the current session type to the next session. e.g. On Break -> Focusing or Focusing -> On Break
-   */
+/**
+ * State function to transition the current session type to the next session. e.g. On Break -> Focusing or Focusing -> On Break
+ */
+  function nextSession(focusDuration, breakDuration) {
   return (currentSession) => {
     if (currentSession.session.label === "Focusing") {
       return {
