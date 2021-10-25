@@ -5,7 +5,6 @@ node_modules/
 .env.production
 /build
 vercel.json
-.DS_Store
-.gitignore
-__tests__
+src/.DS_Store
+src/__tests__
 .qualified-attach.json
