@@ -28,8 +28,6 @@ The timer in this application has the capability to adjust the duration of each 
 - React Hooks
 - Bootstrap styling CSS
 
----
-
 ## How To Use
 
 #### Installation:
@@ -37,8 +35,6 @@ The timer in this application has the capability to adjust the duration of each 
 1. Fork and clone this repository
 2. Run `npm install` to install project dependencies
 3. Run `npm start` to start your server
-
----
 
 ## License
 
@@ -63,8 +59,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
 
 ## Author Info
 
