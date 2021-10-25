@@ -10,14 +10,9 @@
 - [License](#license)
 - [Author Info](#author-info)
 
----
-
 ## Live Application
 
 This application can be viewed here: https://pomodoro-timer-with-react-six.vercel.app
-
----
-
 
 ## Description
 
@@ -26,8 +21,6 @@ The Pomodoro Timer is used as a time management technique for maximizing efficie
 The timer in this application has the capability to adjust the duration of each period, and it can also be paused or stopped during a session. A countdown timer with a progress bar shows the time left during each period. Duration setter buttons are disabled during a session, whereas, the stop button is disabled while the timer is inactive.
 
 ![Image of the application actively running](/images/pomodoro-timer-active.png)
-
----
 
 ## Technologies
 
@@ -79,7 +72,5 @@ SOFTWARE.
 - GitHub: [miki-saarna](https://github.com/miki-saarna)
 - LinkedIn: [Mikito Saarna](https://www.linkedin.com/in/mikito-saarna/)
 - Website: [MikiSaarna.com](https://MikiSaarna.com)
-
----
 
 [Back To The Top](#pomodoro-timer)
