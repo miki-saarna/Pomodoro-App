@@ -8,3 +8,4 @@ vercel.json
 .DS_Store
 .gitignore
 __tests__
+.qualified-attach.json
