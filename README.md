@@ -25,7 +25,7 @@ The timer in this application has the capability to adjust the duration of each 
 ## Technologies
 
 - React
-- React Hooks
+- React State Management with the `useState` React hook
 - Bootstrap styling CSS
 
 ## How To Use
